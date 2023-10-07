@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Narges Rasouli 1</title>
+		<style>
+			body{
+				direction: rtl;
+				background: url("https://wallpapers.com/images/hd/spiral-milky-way-galaxy-57bi3fxyfrkifr0t.webp");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+				}
+
+			.mymain{
+				/*div center*/
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				/*text center*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				font-family: Adobe Arabic;
+				font-size: 22px;
+				opacity: 0.80;
+				background-color: white;
+				height: 50%;
+				border-radius: 20px;
+				box-shadow: 0 4px 8px 0 rgba(145, 126, 126, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+				}
+
+			input[type=text], [type=password] {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+				}
+			  
+			  label {
+				padding: 12px 12px 12px 0;
+				display: inline-block;
+				}
+			  
+			  input[type=submit] {
+				background-color: #4CAF50;
+				color: white;
+				margin-top: 10px;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				float: right;
+				}
+			  
+			  input[type=submit]:hover {
+				background-color: #45a049;
+				}
+			  
+			  .form-login {
+				width: 80%;
+				}
+			  
+			  .col-25 {
+				float: right;
+				width: 25%;
+				margin-top: 6px;
+				}
+			  
+			  .col-75 {
+				float: left;
+				width: 75%;
+				margin-top: 6px;
+				}
+			  
+			  /* Clear floats after the columns */
+			  .row:after {
+				content: "";
+				display: table;
+				clear: both;
+				}
+			  
+			  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+			  @media screen and (max-width: 900px) {
+				input[type=submit] {
+				  width: 100%;
+					}
+				input[type=text], [type=password]{
+					padding: 5px;
+					}
+				.mymain{
+				font-size: 16px;
+					border-radius: 0;
+					}
+				}
+
+		</style>
+    </head>
+
+    <body>
+        
+        <div class="mymain col-75" style="width: 50%;">
+            <div class="form-login">
+                <form>
+
+                    <div class="row">
+
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="uname">نام کاربری:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="uname" name="username" placeholder="نام کاربری..." required>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="psw">رمزعبور:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="password" id="psw" name="psw" placeholder="رمزعبور..." required>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                        </div>
+                        <div class="col-75">
+                          <input type="checkbox" id="chbox" name="chbox"> مرا به خاطر بسپار
+                        </div>
+                      </div>
+
+                    <br>
+                    <div class="row">
+                      <input type="submit" value="ورود">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
